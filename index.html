@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!-- Responsividade -->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!-- Owl CSS -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <title>NETFLIX CLONE</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">HOUSE OF CARDS</h3>
+                <p class="descricao">Nada pode impedir o político sem escrúpulos Frank Underwood de conquistar Washington. Assista agora a nova temporada de House of Cards que esta imperdível</p>
+                <div class="botoes">
+                    <button role="button" class="botao" onclick=" window.open('https://www.youtube.com/watch?v=RhPdTZk5cf8&list=PLRIpHyatV8SBGQfhERbFUErdNhdILHeMJ','_blank')">
+                        <i class="fas fa-play" aria-hidden="true"></i> ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao" onclick="$('#dialog').dialog();">
+                        <i class="fas fa-info-circle" aria-hidden="true"></i> MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="img/mini1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini4.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini5.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini6.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini7.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini8.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini9.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini10.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Mais Informações -->
+    <div id="dialog" title="HOUSE OF CARDS" style="display: none;">
+        <p>O congressista Francis Underwood e sua mulher, Claire, fazem de tudo para conquistar seus objetivos, não importa o que aconteça. Um mundo político recheado de ganância, corrupção e luxúria na capital Washington.</p>
+        <p><b>Primeiro episódio:</b> 1 de fevereiro de 2013</p>
+        <p><b>Número de temporadas:</b> 6</p>
+        <p><b>Número de episódios:</b> 73</p>
+        <p><b>Autores:</b> Beau Willimon, Andrew Davies, Laura Eason, MAIS</p>
+        <p><b>Prêmios:</b> Writers Guild of America Award de Melhor Nova Série, MAIS</p>
+      </div>
+
+    <script src="https://kit.fontawesome.com/e33945031f.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+
+    <script src="js/setup.js"></script>
+
+</body>
+</html>
